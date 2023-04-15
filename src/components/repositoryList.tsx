@@ -17,6 +17,6 @@ export default function RepositoryList({ repositories, isLoading }: { repositori
         <Image src="/undraw_not_found_re_bh2e.svg" alt="Sad face" width={400} height={400} />
     </div>)
 
-    const repositoryCards = repositories.items.map((repo: Item, index: number) => <RepositoryCard repo={repo} index={index} />);
+    const repositoryCards = repositories.items.map((repo: Item, index: number) => <RepositoryCard repo={repo} key={repo.id} index={index} />);
     return <section data-testid="repositories" className={styles.grid}>{repositoryCards}</section>
 }
