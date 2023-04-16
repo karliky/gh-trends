@@ -6,14 +6,14 @@ https://gh-trends.vercel.app/
 
 ## Table of Contents
 1. [Features](#Features)
-2. Getting Started
-    1. Prerequisites
-    2. Installation
-3. Usage
-4. Technology Stack
-5. Tests
-6. Contributing
-7. License
+2. [Getting started](#getting-started)
+    1. [Prerequisites](#Prerequisites)
+    2. [Installation](#Installation)
+3. [Usage](#Usage)
+4. [Technology Stack](#technology-stack)
+5. [Tests](#tests)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ## Features
 - Display a list of trending repositories created in the last 7 days, sorted by the number of stars.
@@ -26,10 +26,10 @@ https://gh-trends.vercel.app/
 ## Getting Started
 These instructions will help you set up the project on your local machine for development and testing purposes.
 
-## Prerequisites
+### Prerequisites
 Node.js (version 16 or higher)
 
-## Installation
+### Installation
 Clone the repository:
 ```
 git clone https://github.com/karliky/gh-trends
