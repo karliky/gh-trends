@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import fetchRepos from '@/api/github';
 import { useFilters } from '@/context/filtersContext';
 
-import { Repositories } from '../types';
+import { Repositories } from '@/types';
 
 const useRepositoryList = (defaultRepositories: Repositories) => {
   const { activeTab, filteredLanguage } = useFilters();

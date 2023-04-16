@@ -1,5 +1,5 @@
 import { useFilters } from '@/context/filtersContext';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/header.module.css';
 import { Item, Sections } from '@/types';
 
 interface LeftSideProps {

@@ -1,7 +1,9 @@
+import React from 'react';
+
 import { languages } from '@/constants';
 import { useFavorites } from '@/context/favoritesContext';
 import { useFilters } from '@/context/filtersContext';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/header.module.css';
 
 interface RightSideProps {
   filteredLanguage: string;

@@ -4,7 +4,7 @@ import { ReactNode } from 'react';
 import { act } from 'react-dom/test-utils';
 
 import { buildItemMockWithId, buildRepositoriesMock } from '@/__tests__/__mocks__';
-import Filter from '@/components/filter';
+import Filter from '@/components/header/filter';
 import { FavoritesContextProvider, useFavorites } from '@/context/favoritesContext';
 import { render, renderHook, screen } from '@testing-library/react';
 

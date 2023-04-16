@@ -1,10 +1,9 @@
 
 import Image from 'next/image';
 
-import styles from '@/styles/Home.module.css';
+import RepositoryCard from '@/components/repositoryCard';
+import styles from '@/styles/repository.module.css';
 import { Item, Repositories } from '@/types';
-
-import RepositoryCard from './repositoryCard';
 
 export default function RepositoryList({ repositories, isLoading }: { repositories: Repositories, isLoading: boolean }) {
     if (isLoading) return <section className={styles.spinner} data-testid="spinner">

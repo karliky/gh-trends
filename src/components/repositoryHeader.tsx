@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { useFavorites } from '@/context/favoritesContext';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/repository.module.css';
 import { Item } from '@/types';
 
 export default function RepositoryHeader({ repo, index }: { repo: Item, index: number }) {

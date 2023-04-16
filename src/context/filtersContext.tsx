@@ -1,6 +1,6 @@
 import { createContext, useContext, useState } from 'react';
 
-import { Sections } from '../types';
+import { Sections } from '@/types';
 
 type FiltersContextType = {
   activeTab: string;

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import RepositoryHeader from '@/components/repositoryHeader';
-import styles from '@/styles/Home.module.css';
+import styles from '@/styles/repository.module.css';
 import { Item } from '@/types';
 
 export default function RepositoryCard({ repo, index }: { repo: Item, index: number }) {

@@ -1,9 +1,8 @@
+import Filter from '@/components/header/filter';
+import RepositoryList from '@/components/repositoryList';
 import useRepositoryList from '@/hooks/useRepositoryList';
-import styles from '@/styles/Home.module.css';
-
-import { Repositories, Sections } from '../types';
-import Filter from './filter';
-import RepositoryList from './repositoryList';
+import styles from '@/styles/repository.module.css';
+import { Repositories } from '@/types';
 
 export default function RepositoryListContainer({ respositories }: { respositories: Repositories }) {
   const { repositoryList, isLoading, setRepositoryList } = useRepositoryList(respositories);

@@ -1,4 +1,4 @@
-import { Repositories } from '../types';
+import { Repositories } from '@/types';
 
 const date = new Date();
 date.setDate(date.getDate() - 7);

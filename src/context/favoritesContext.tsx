@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 
-import { Item } from '../types';
+import { Item } from '@/types';
 
 type FavoritesContextType = {
   favorites: Item[];
