@@ -12,7 +12,6 @@ https://gh-trends.vercel.app/
 3. [Usage](#Usage)
 4. [Technology Stack](#technology-stack)
 5. [Tests](#tests)
-6. [Contributing](#contributing)
 7. [License](#license)
 
 ## Features
@@ -52,7 +51,13 @@ The application should now be running on http://localhost:3000.
 Live application can be found at https://gh-trends.vercel.app/
 
 ## Usage
-Visit the application in your browser. Browse the list of trending repositories and mark your favorites by clicking the bookmark icon. Use the "Trending" and "Favorites" tabs to switch between the full list of repositories and your favorite repositories. Filter repositories by programming languages using the dropdown menu.
+Visit the application in your browser. 
+
+Browse the list of trending repositories and mark your favorites by clicking the bookmark icon. 
+
+Use the *"Trending"* and *"Favorites"* tabs to switch between the full list of repositories and your favorite repositories. 
+
+Filter repositories by programming languages using the dropdown menu.
 
 ## Technology Stack
 - React
@@ -60,8 +65,6 @@ Visit the application in your browser. Browse the list of trending repositories 
 - TypeScript
 - CSS Modules
 - GitHub REST API
-- Contributing
-    - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
 ## Tests
 Tests are written using React Testing Library under the `src\__tests__` folder.
