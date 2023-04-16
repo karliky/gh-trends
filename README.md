@@ -4,6 +4,10 @@ allowing users to view and manage their favorite repositories.
 
 https://gh-trends.vercel.app/
 
+Domain diagram
+
+[[/public/gh-trends.drawio.png|Diagram]]
+
 ## Table of Contents
 1. [Features](#Features)
 2. [Getting started](#getting-started)
