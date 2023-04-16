@@ -1,38 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Catch the Code Wave: Today's Hottest GitHub Trends
+A React-based web application to discover trending repositories on GitHub, 
+allowing users to view and manage their favorite repositories.
+
+https://gh-trends.vercel.app/
+
+## Table of Contents
+1. [Features](#Features)
+2. Getting Started
+    1. Prerequisites
+    2. Installation
+3. Usage
+4. Technology Stack
+5. Tests
+6. Contributing
+7. License
+
+## Features
+- Display a list of trending repositories created in the last 7 days, sorted by the number of stars.
+- Allow users to mark a repository as a favorite.
+- View favorite repositories using a filter or a separate tab.
+- Show basic information about the repository, including the name, link to GitHub, description, and number of stars.
+- Store favorite repositories locally using local storage.
+- (Bonus) Filter repositories by programming languages.
 
 ## Getting Started
+These instructions will help you set up the project on your local machine for development and testing purposes.
 
-First, run the development server:
+## Prerequisites
+Node.js (version 16 or higher)
 
-```bash
+## Installation
+Clone the repository:
+```
+git clone https://github.com/karliky/gh-trends
+```
+Change to the project directory:
+```
+cd gh-trends
+```
+Install dependencies:
+```
+npm install
+```
+Start the development server:
+```
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application should now be running on http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Live application can be found at https://gh-trends.vercel.app/
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Usage
+Visit the application in your browser. Browse the list of trending repositories and mark your favorites by clicking the bookmark icon. Use the "Trending" and "Favorites" tabs to switch between the full list of repositories and your favorite repositories. Filter repositories by programming languages using the dropdown menu.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Technology Stack
+- React
+- Next.js
+- TypeScript
+- CSS Modules
+- GitHub REST API
+- Contributing
+    - Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tests
+Tests are written using React Testing Library under the `src\__tests__` folder.
 
-## Learn More
+```
+$ npm run test
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
