@@ -6,7 +6,8 @@ https://gh-trends.vercel.app/
 
 Domain diagram
 
-[[/public/gh-trends.drawio.png|Diagram]]
+![Domain diagram](https://github.com/karliky/gh-trends/raw/main/public/gh-trends.drawio.png?raw=true)
+
 
 ## Table of Contents
 1. [Features](#Features)
