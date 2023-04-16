@@ -28,6 +28,7 @@ export default function RepositoryCard({ repo, index }: { repo: Item, index: num
             <div className={styles.flex__center}>
                 <div className={styles.inline_items}>
                     <Image src={repo.owner.avatar_url} height={18} width={18} alt='Owner' className={styles.bubble} />
+                    <span>Language: {repo.language}</span>
                     <span>Created by: {repo.owner.login}</span>
                 </div>
             </div>
