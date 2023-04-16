@@ -25,17 +25,19 @@ export default function RepositoryCard({ repo, index }: { repo: Item, index: num
                     <span>{repo.forks}</span>
                 </div>
             </div>
-            <div className={styles.flex__center}>
+            <div>
                 <div className={styles.inline_items}>
                     <Image src={repo.owner.avatar_url} height={18} width={18} alt='Owner' className={styles.bubble} />
-                    <span>Language: {repo.language}</span>
                     <span>Created by: {repo.owner.login}</span>
                 </div>
+                {repo.language && <div className={styles.inline_items}>
+                    <span>Language: {repo.language}</span>
+                </div>}
             </div>
         </div>
         <div className={styles.actions}>
             <div className={`${styles.action_view} ${styles.pointer}`}>
-                <a href={repo.homepage || repo.html_url} target='_blank'>View repository</a>
+                <a href={repo.homepage || repo.html_url} target='_blank'>{repo.homepage ? 'View homepage' : 'View repository'}</a>
             </div>
             <div className={`${styles.action_view} ${styles.pointer}`}>
                 <a href={repo.owner.html_url} target='_blank'>View owner</a>
