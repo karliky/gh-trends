@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 
 import fetchRepos from '@/api/github';
 import { useFilters } from '@/context/filtersContext';
-
 import { Repositories } from '@/types';
 
 const useRepositoryList = (defaultRepositories: Repositories) => {
-  const { activeTab, filteredLanguage } = useFilters();
+  const { activeTab, currentLanguage } = useFilters();
   const [repositoryList, setRepositoryList] = useState<Repositories>(defaultRepositories);
   const [isLoading, setIsLoading] = useState(false);
   const [firstCall, setFirstCall] = useState(true);
@@ -14,19 +13,19 @@ const useRepositoryList = (defaultRepositories: Repositories) => {
     if (firstCall) return setFirstCall(false);
     if (activeTab !== "trending") return;
     setIsLoading(true);
-    if (filteredLanguage === "All" && activeTab === "trending") {
+    if (currentLanguage === "All" && activeTab === "trending") {
       setRepositoryList(defaultRepositories);
       setIsLoading(false);
       return;
     }
-    const q = filteredLanguage === "All" ? `` : `&q=language:${filteredLanguage}`;
+    const q = currentLanguage === "All" ? `` : `&q=language:${currentLanguage}`;
     fetchRepos(q).then((repositories) => {
       setRepositoryList(repositories);
       setIsLoading(false);
     });
-  }, [filteredLanguage, activeTab]);
+  }, [currentLanguage, activeTab]);
 
-  return { repositoryList, isLoading, setRepositoryList };
+  return { repositoryList, isLoading, setRepositoryList, currentLanguage };
 };
 
 export default useRepositoryList;

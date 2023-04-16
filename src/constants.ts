@@ -7,6 +7,7 @@ export const languages = [
     'Java',
     'HTML',
     'PHP',
+    'Rust',
     'Python',
     'TypeScript',
     'Dart',

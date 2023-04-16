@@ -5,12 +5,12 @@ import styles from '@/styles/repository.module.css';
 import { Repositories } from '@/types';
 
 export default function RepositoryListContainer({ respositories }: { respositories: Repositories }) {
-  const { repositoryList, isLoading, setRepositoryList } = useRepositoryList(respositories);
+  const { repositoryList, isLoading, setRepositoryList, currentLanguage } = useRepositoryList(respositories);
   return <section className={styles.repositories}>
     <Filter
       setRepositories={setRepositoryList}
       repositoryList={repositoryList}
     />
-    <RepositoryList repositories={repositoryList} isLoading={isLoading} />
+    <RepositoryList currentLanguage={currentLanguage} repositories={repositoryList} isLoading={isLoading} />
   </section>
 }

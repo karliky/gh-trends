@@ -92,6 +92,11 @@
         justify-content: center;
     }
 
+    .filters {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
     .tabs {
         margin: 5px;
     }

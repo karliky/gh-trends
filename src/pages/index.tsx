@@ -4,7 +4,6 @@ import fetchRepos from '@/api/github';
 import Footer from '@/components/footer';
 import RepositoryListContainer from '@/components/repositoryListContainer';
 import styles from '@/styles/home.module.css';
-
 import { Repositories } from '@/types';
 
 export async function getServerSideProps() {

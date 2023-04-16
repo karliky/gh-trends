@@ -4,16 +4,16 @@ import { Sections } from '@/types';
 
 type FiltersContextType = {
   activeTab: string;
-  filteredLanguage: string;
+  currentLanguage: string;
   setActiveTab: Function;
-  setFilteredLanguage: Function;
+  setcurrentLanguage: Function;
 }
 
 const FiltersContext = createContext<FiltersContextType>({
   activeTab: 'trending',
-  filteredLanguage: 'All',
+  currentLanguage: 'All',
   setActiveTab: () => {},
-  setFilteredLanguage: () => {},
+  setcurrentLanguage: () => {},
 });
 
 type ProviderProps = {
@@ -22,14 +22,14 @@ type ProviderProps = {
 
 export const FiltersContextProvider = ({ children }: ProviderProps) => {
   const [activeTab, setActiveTab] = useState('trending' as Sections)
-  const [filteredLanguage, setFilteredLanguage] = useState<string>("All");
+  const [currentLanguage, setcurrentLanguage] = useState<string>("All");
 
   return (
     <FiltersContext.Provider value={{ 
       activeTab, 
       setActiveTab, 
-      filteredLanguage, 
-      setFilteredLanguage
+      currentLanguage, 
+      setcurrentLanguage
     }}>
       {children}
     </FiltersContext.Provider>

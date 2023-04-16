@@ -1,13 +1,12 @@
 
 import { useEffect } from 'react';
 
+import RightSide from '@/components/header//rightSide';
+import LeftSide from '@/components/header/leftSide';
 import { useFavorites } from '@/context/favoritesContext';
 import { useFilters } from '@/context/filtersContext';
 import styles from '@/styles/header.module.css';
-
 import { Repositories, Sections } from '@/types';
-import LeftSide from '@/components/header/leftSide';
-import RightSide from '@/components/header//rightSide';
 
 export default function Filter({
   setRepositories,
@@ -17,10 +16,10 @@ export default function Filter({
   repositoryList: Repositories;
 }) {
   const { favorites } = useFavorites();
-  const { activeTab, setActiveTab, filteredLanguage, setFilteredLanguage } = useFilters();
+  const { activeTab, setActiveTab, currentLanguage, setcurrentLanguage } = useFilters();
   
   useEffect(() => {
-    if (activeTab === 'favorites') setFavoritesFilter(filteredLanguage)
+    if (activeTab === 'favorites') setFavoritesFilter(currentLanguage)
   }, [favorites])
 
   const setFavoritesFilter = (language: string) => {
@@ -34,17 +33,17 @@ export default function Filter({
   const handleTab = (section: Sections) => {
     setActiveTab(section);
     if (section === "trending") {
-      setFilteredLanguage("All");
+      setcurrentLanguage("All");
       setRepositories(repositoryList);
     }
     if (section === "favorites") {
-      setFilteredLanguage("All");
+      setcurrentLanguage("All");
       setRepositories({ items: favorites });
     }
   };
 
   const filterByLanguages = (language: string) => {
-    setFilteredLanguage(language);
+    setcurrentLanguage(language);
     setFavoritesFilter(language);
   };
 
@@ -52,7 +51,7 @@ export default function Filter({
     <section className={styles.filter}>
       <LeftSide handleTab={handleTab} favorites={favorites} />
       <RightSide
-        filteredLanguage={filteredLanguage}
+        currentLanguage={currentLanguage}
         filterByLanguages={filterByLanguages}
       />
     </section>
