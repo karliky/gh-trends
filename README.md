@@ -1,6 +1,7 @@
 <p align="center">
     <img src="https://github.com/karliky/gh-trends/raw/main/public/logo.png?raw=true" />
 </p>
+
 # Catch the Code Wave: Today's Hottest GitHub Trends
 A React-based web application to discover trending repositories on GitHub, 
 allowing users to view and manage their favorite repositories.
