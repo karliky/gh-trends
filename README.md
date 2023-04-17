@@ -86,5 +86,17 @@ Tests are written using React Testing Library under the `src\__tests__` folder.
 $ npm run test
 ```
 
+```
+ PASS  src/__tests__/components/filter.test.tsx
+ PASS  src/__tests__/components/repositoryList.test.tsx
+ PASS  src/__tests__/index.test.tsx
+
+Test Suites: 3 passed, 3 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        2.82 s
+Ran all test suites.
+```
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
