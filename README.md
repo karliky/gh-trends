@@ -5,7 +5,7 @@ allowing users to view and manage their favorite repositories.
 https://gh-trends.vercel.app/
 
 <p align="center">
-![App](https://github.com/karliky/gh-trends/raw/main/public/promo.png?raw=true)
+    <img src="https://github.com/karliky/gh-trends/raw/main/public/promo.png?raw=true" />
 </p>
 
 Diagram of the app logic composition
