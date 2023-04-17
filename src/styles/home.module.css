@@ -5,11 +5,12 @@
 
 .header {
   background-color: var(--main-bg-color);
+  padding: 15px 0;
+}
 
-  border: 1px solid #eaeaea;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
+.h1, .h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .h1 {
@@ -34,6 +35,14 @@
   background-color: var(--main-bg-color);
   text-align: center;
   min-height: 65px;
+}
+
+.logo img {
+  width: 75px;
+}
+
+.logo {
+  margin-right: 15px;
 }
 
 .footer img {

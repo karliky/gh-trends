@@ -25,9 +25,14 @@ export default function Home({ defaultRepositories }: { defaultRepositories: Rep
       <main className={styles.main}>
         <header className={styles.header}>
           <div className={styles.inline}>
-            <div>
-              <h1 className={styles.h1}>Catch the Code Wave</h1>
-              <h2 className={styles.h2}>Today&apos;s Hottest GitHub Trends!</h2>
+            <div className={styles.inline}>
+              <div className={styles.logo}>
+                <img src="/logo.png" alt="Gh-Trends" />
+              </div>
+              <div>
+                <h1 className={styles.h1}>Catch the Code Wave</h1>
+                <h2 className={styles.h2}>Today&apos;s Hottest GitHub Trends!</h2>
+              </div>
             </div>
             <div>
               <a href="https://github.com/karliky/gh-trends" target='_blank'>View on GitHub</a>
