@@ -5,7 +5,7 @@ import RepositoryCard from '@/components/repositoryCard';
 import styles from '@/styles/repository.module.css';
 import { Item, Repositories } from '@/types';
 
-export default function RepositoryList({ repositories, isLoading, currentLanguage }: { repositories: Repositories, isLoading: boolean, currentLanguage: string }) {
+export default function RepositoryList({ repositories, isLoading }: { repositories: Repositories, isLoading: boolean }) {
     if (isLoading) return <section className={styles.spinner} data-testid="spinner">
         <span className={styles.loader}></span>
     </section>

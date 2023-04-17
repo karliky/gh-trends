@@ -12,10 +12,7 @@ describe('Filter', () => {
     it('renders the component with no badge count as we have not added to favorites yet', () => {
         render(<Filter 
             setRepositories={jest.fn()} 
-            activeTab='trending' 
-            setActiveTab={jest.fn()} 
             repositoryList={buildRepositoriesMock()} 
-            setIsLoading={jest.fn()} 
         />)
         const favoritesBadge = screen.queryByTestId('favorites-badge')
         expect(favoritesBadge).not.toBeInTheDocument()
@@ -29,10 +26,7 @@ describe('Filter', () => {
         })
         render(<Filter 
             setRepositories={jest.fn()} 
-            activeTab='trending' 
-            setActiveTab={jest.fn()} 
             repositoryList={buildRepositoriesMock()} 
-            setIsLoading={jest.fn()} 
         />, { wrapper })
         const favoritesBadge = screen.queryByTestId('favorites-badge')
         expect(favoritesBadge).toBeInTheDocument()

@@ -3,6 +3,7 @@
     --color-text: #6c63ff;
     --active-color: #6c63ff;
     --color-heading: #111111;
+    --border-color: rgb(229 231 235);
 }
 
 body {
@@ -33,7 +34,7 @@ a, a:visited, a:active, a:hover {
     right: 7px;
     top: 3px;
     width: 22px;
-    background: #fff;
+    background: var(--main-bg-color);
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     pointer-events: none;
@@ -59,7 +60,7 @@ a, a:visited, a:active, a:hover {
     -moz-appearance: none;
     appearance: none;
     padding: 0 30px 0 10px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--border-color);
     border-radius: 3px;
     line-height: 36px;
     height: 36px;

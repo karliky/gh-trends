@@ -17,14 +17,22 @@ export default function Home({ defaultRepositories }: { defaultRepositories: Rep
   return (
     <>
       <Head>
-        <title>What&apos;s trending?</title>
+        <title>Gh-Trends - What&apos;s trending?</title>
         <meta name="description" content="Find and manage your favourites repositories" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
         <header className={styles.header}>
-          <h1>Catch the Code Wave: Today&apos;s Hottest GitHub Trends!</h1>
+          <div className={styles.inline}>
+            <div>
+              <h1 className={styles.h1}>Catch the Code Wave</h1>
+              <h2 className={styles.h2}>Today&apos;s Hottest GitHub Trends!</h2>
+            </div>
+            <div>
+              <a href="https://github.com/karliky/gh-trends" target='_blank'>View on GitHub</a>
+            </div>
+          </div>
         </header>
         <RepositoryListContainer respositories={defaultRepositories} />
         <Footer />

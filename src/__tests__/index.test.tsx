@@ -6,7 +6,7 @@ import { render, screen } from '@testing-library/react';
 
 describe('Home', () => {
   it('renders the home with no items', () => {
-    render(<Home repositories={buildRepositoriesMock()} />)
+    render(<Home defaultRepositories={buildRepositoriesMock()} />)
 
     const heading = screen.getByRole('heading', {
       name: /Hottest GitHub Trends/i,
@@ -19,7 +19,7 @@ describe('Home', () => {
   it('renders the home with items', () => {
     const repositories = buildRepositoriesMock([buildItemMockWithId(1), buildItemMockWithId(2)])
 
-    render(<Home repositories={repositories} />)
+    render(<Home defaultRepositories={repositories} />)
     expect(screen.queryByTestId('repositories')).toBeInTheDocument()
   })
 })
