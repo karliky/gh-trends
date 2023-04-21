@@ -6,7 +6,7 @@ import RepositoryListContainer from '@/components/repositoryListContainer';
 import styles from '@/styles/home.module.css';
 import { Repositories } from '@/types';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const defaultRepositories = await fetchRepos();
   return {
     props: { defaultRepositories },
